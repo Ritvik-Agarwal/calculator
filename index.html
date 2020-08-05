@@ -15,39 +15,152 @@
 			<h1>Calculator</h1>
 		</div>
 		<div class="container calculator">
-			<div class="display-area">
-				Something will be displayed hereaaaaaaaaaaaaaa.
+			<div class="row">
+				<input onkeypress="showContent()" id="display" type="text" />
 			</div>
 			<div class="row">
-				<div class="col-4 clicker">+</div>
-				<div class="col-4 clicker">-</div>
-				<div class="col-4 clicker">*</div>
+				<div
+					id="plus"
+					class="col-4 clicker"
+					data-value="+"
+					onclick="addChar(this)"
+				>
+					+
+				</div>
+				<div
+					id="minus"
+					class="col-4 clicker"
+					data-value="-"
+					onclick="addChar(this)"
+				>
+					-
+				</div>
+				<div
+					id="multiply"
+					class="col-4 clicker"
+					data-value="*"
+					onclick="addChar(this)"
+				>
+					*
+				</div>
 			</div>
 			<div class="row">
-				<div class="col-4 clicker">/</div>
-				<div class="col-4 clicker">0</div>
-				<div class="col-4 clicker">1</div>
+				<div
+					id="divide"
+					class="col-4 clicker"
+					data-value="/"
+					onclick="addChar(this)"
+				>
+					/
+				</div>
+				<div
+					id="zero"
+					class="col-4 clicker"
+					data-value="0"
+					onclick="addChar(this)"
+				>
+					0
+				</div>
+				<div
+					id="one"
+					class="col-4 clicker"
+					data-value="1"
+					onclick="addChar(this)"
+				>
+					1
+				</div>
 			</div>
 			<div class="row">
-				<div class="col-4 clicker">2</div>
-				<div class="col-4 clicker">3</div>
-				<div class="col-4 clicker">4</div>
+				<div
+					id="two"
+					class="col-4 clicker"
+					data-value="2"
+					onclick="addChar(this)"
+				>
+					2
+				</div>
+				<div
+					id="three"
+					class="col-4 clicker"
+					data-value="3"
+					onclick="addChar(this)"
+				>
+					3
+				</div>
+				<div
+					id="four"
+					class="col-4 clicker"
+					data-value="4"
+					onclick="addChar(this)"
+				>
+					4
+				</div>
 			</div>
 			<div class="row">
-				<div class="col-4 clicker">5</div>
-				<div class="col-4 clicker">6</div>
-				<div class="col-4 clicker">7</div>
+				<div
+					id="five"
+					class="col-4 clicker"
+					data-value="5"
+					onclick="addChar(this)"
+				>
+					5
+				</div>
+				<div
+					id="six"
+					class="col-4 clicker"
+					data-value="6"
+					onclick="addChar(this)"
+				>
+					6
+				</div>
+				<div
+					id="seven"
+					class="col-4 clicker"
+					data-value="7"
+					onclick="addChar(this)"
+				>
+					7
+				</div>
 			</div>
 			<div class="row">
-				<div class="col-4 clicker">8</div>
-				<div class="col-4 clicker">9</div>
-				<div class="col-4 clicker">=</div>
+				<div
+					id="eight"
+					class="col-4 clicker"
+					data-value="8"
+					onclick="addChar(this)"
+				>
+					8
+				</div>
+				<div
+					id="nine"
+					class="col-4 clicker"
+					data-value="9"
+					onclick="addChar(this)"
+				>
+					9
+				</div>
+				<div
+					id="equal"
+					class="col-4 clicker"
+					data-value="="
+					onclick="addChar(this)"
+				>
+					=
+				</div>
 			</div>
 			<div class="row">
-				<div class="col-12 clicker">Clear</div>
+				<div
+					id="wipe"
+					class="col-12 clicker"
+					data-value="wipe"
+					onclick="clearDisplay()"
+				>
+					Clear
+				</div>
 			</div>
 		</div>
 	</body>
+	<script src="js/calculator.js"></script>
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/popper.js/dist/popper.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
